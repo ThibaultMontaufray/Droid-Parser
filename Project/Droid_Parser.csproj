@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{23972067-F09F-4A95-9814-0AEFC6748B3E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Assistant</RootNamespace>
+    <AssemblyName>Droid_flat_files</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\C357555\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>lib\4.0\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="FarsiLibrary.Localization, Version=2.6.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <HintPath>packages\Farsi.Library.Win.2.6.0\lib\net46\FarsiLibrary.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=2.6.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <HintPath>packages\Farsi.Library.Win.2.6.0\lib\net46\FarsiLibrary.Utils.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=2.6.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <HintPath>packages\Farsi.Library.Win.2.6.0\lib\net46\FarsiLibrary.Win.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastColoredTextBox, Version=2.16.11.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <HintPath>packages\FCTB.2.16.11.0\lib\FastColoredTextBox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Droid_Cryptographie, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Droid_cryptography.1.0.5\lib\4.0\Droid_Cryptographie.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=3.5.8.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\officeribbon.3.5.8.4\lib\net20\System.Windows.Forms.Ribbon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Tools4Libraries, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Tools4Libraries.1.0.10\lib\4.0\Tools4Libraries.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controler\Interface_parser.cs" />
+    <Compile Include="Controler\Program.cs" />
+    <Compile Include="Controler\StringTextSource.cs" />
+    <Compile Include="Vues\ColorLangage.cs" />
+    <Compile Include="Vues\GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\GUI2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\GUI2.Designer.cs">
+      <DependentUpon>GUI2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\PanelHexa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modèles\CodeMessage.cs" />
+    <Compile Include="Modèles\Dico.cs" />
+    <Compile Include="Modèles\Field.cs" />
+    <Compile Include="Modèles\Info.cs" />
+    <Compile Include="Modèles\Item.cs" />
+    <Compile Include="Modèles\Length.cs" />
+    <Compile Include="Modèles\Message.cs" />
+    <Compile Include="Modèles\Format.cs" />
+    <Compile Include="Modèles\parsing.cs" />
+    <Compile Include="Modèles\Tag.cs" />
+    <Compile Include="Modèles\Type.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vues\TextColoration.cs" />
+    <Compile Include="Vues\ToolStripMenuFP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vues\GUI.resx">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\GUI2.resx">
+      <DependentUpon>GUI2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
